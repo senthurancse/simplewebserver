@@ -1,5 +1,5 @@
 # EX01 Developing a Simple Webserver
-## Date:
+## Date:22/10/2026
 
 ## AIM:
 To develop a simple webserver to serve html pages and display the Device Specifications of your Laptop.
@@ -39,6 +39,7 @@ Open a browser and navigate to http://127.0.0.1:8000 (or the assigned port).
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
 content = """
+```
 <!DOCTYPE html>
 <html>
 <head>
@@ -80,6 +81,7 @@ content = """
     </table>
 </body>
 </html>
+```
 """
 
 class MyHandler(BaseHTTPRequestHandler):
